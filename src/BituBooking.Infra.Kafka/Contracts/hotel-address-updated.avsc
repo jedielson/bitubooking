@@ -1,0 +1,35 @@
+{
+    "name": "HotelAddressUpdated",
+    "type": "record",
+    "version": "1",
+    "namespace": "BituBooking.Infra.Kafka.Contracts.Events",
+    "fields": [
+        {
+            "name": "HotelCode",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "Street",
+            "type": "string"
+        },
+        {
+            "name": "District",
+            "type": "string"
+        },
+        {
+            "name": "City",
+            "type": "string"
+        },
+        {
+            "name": "Country",
+            "type": "string"
+        },
+        {
+            "name": "ZipCode",
+            "type": "int"
+        }
+    ]
+}

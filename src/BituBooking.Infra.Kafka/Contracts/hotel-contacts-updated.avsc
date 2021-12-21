@@ -1,0 +1,27 @@
+{
+    "name": "HotelContactsUpdated",
+    "type": "record",
+    "version": "1",
+    "namespace": "BituBooking.Infra.Kafka.Contracts.Events",
+    "fields": [
+        {
+            "name": "HotelCode",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "Email",
+            "type": "string"
+        },
+        {
+            "name": "Phone",
+            "type": "string"
+        },
+        {
+            "name": "Mobile",
+            "type": "string"
+        }
+    ]
+}

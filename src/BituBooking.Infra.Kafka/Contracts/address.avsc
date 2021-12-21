@@ -1,0 +1,28 @@
+{
+    "name": "Address",
+    "type": "record",
+    "version": "1",
+    "namespace": "BituBooking.Infra.Kafka.Contracts.Events",
+    "fields": [
+        {
+            "name": "Street",
+            "type": "string"
+        },
+        {
+            "name": "District",
+            "type": "string"
+        },
+        {
+            "name": "City",
+            "type": "string"
+        },
+        {
+            "name": "Country",
+            "type": "string"
+        },
+        {
+            "name": "ZipCode",
+            "type": "int"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "name": "HotelCreated",
+    "type": "record",
+    "version":"1",
+    "namespace": "BituBooking.Infra.Kafka.Contracts.Events",
+    "fields": [
+      {
+        "name": "Code",
+        "type": {
+            "type":"string",
+            "logicalType":"uuid"
+        }
+      },
+      {
+        "name": "Name",
+        "type": "string"
+      },
+      {
+        "name": "StarsOfCategory",
+        "type": "int"
+      },
+      {
+        "name": "StarsOfRating",
+        "type": "int"
+      },
+      {
+        "name": "Address",
+        "type": {
+          "name": "Address",
+          "type": "record",
+          "fields": [
+            {
+              "name": "Street",
+              "type": "string"
+            },
+            {
+              "name": "District",
+              "type": "string"
+            },
+            {
+              "name": "City",
+              "type": "string"
+            },
+            {
+              "name": "Country",
+              "type": "string"
+            },
+            {
+              "name": "ZipCode",
+              "type": "int"
+            }
+          ]
+        }
+      },
+      {
+        "name": "Contacts",
+        "type": {
+          "name": "Contacts",
+          "type": "record",
+          "fields": [
+            {
+              "name": "Mobile",
+              "type": "string"
+            },
+            {
+              "name": "Phone",
+              "type": "string"
+            },
+            {
+              "name": "Email",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    ]
+  }

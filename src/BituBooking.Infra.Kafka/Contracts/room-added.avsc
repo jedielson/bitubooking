@@ -1,0 +1,50 @@
+{
+    "name": "RoomAdded",
+    "type": "record",
+    "version": "1",
+    "namespace": "BituBooking.Infra.Kafka.Contracts.Events",
+    "fields": [
+        {
+            "name": "Code",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "HotelCode",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "Name",
+            "type": "string"
+        },
+        {
+            "name": "Description",
+            "type": "string"
+        },
+        {
+            "name": "PricePerNight",
+            "type": "string"
+        },
+        {
+            "name": "Capacity",
+            "type": "int"
+        },
+        {
+            "name": "AvailableQuantity",
+            "type": "int"
+        },
+        {
+            "name": "Amenities",
+            "type": {
+                "type": "array",
+                "items": "string",
+                "default": []
+            }
+        }
+    ]
+}

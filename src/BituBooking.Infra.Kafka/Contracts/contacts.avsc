@@ -1,0 +1,20 @@
+{
+    "name": "Contacts",
+    "type": "record",
+    "version": "1",
+    "namespace": "BituBooking.Infra.Kafka.Contracts.Events",
+    "fields": [
+        {
+            "name": "Mobile",
+            "type": "string"
+        },
+        {
+            "name": "Phone",
+            "type": "string"
+        },
+        {
+            "name": "Email",
+            "type": "string"
+        }
+    ]
+}
