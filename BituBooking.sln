@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{454019B2-B7A9-4D0C-A559-6899727E9FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Api", "src\BituBooking.Api\BituBooking.Api.csproj", "{75ED7636-E0B0-48F6-934C-1173640331BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Domain", "src\BituBooking.Domain\BituBooking.Domain.csproj", "{BE69DB8E-E73F-4A8D-BA7A-15FFF9243191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Infra.Storage.Mongo", "src\BituBooking.Infra.Storage.Mongo\BituBooking.Infra.Storage.Mongo.csproj", "{406E77F7-2FE2-4E1D-8137-0D0592825C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Infra.Storage.Postgres", "src\BituBooking.Infra.Storage.Postgres\BituBooking.Infra.Storage.Postgres.csproj", "{261B1C29-2704-4834-8A53-6FDA67C3C265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.SharedKernell", "src\BituBooking.SharedKernell\BituBooking.SharedKernell.csproj", "{CE87259F-2FF8-4D90-951B-AC53D7486D28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2688FDB0-EBDB-42F4-B473-6C2DD36289C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Integration", "tests\BituBooking.Integration\BituBooking.Integration.csproj", "{A5B6BCC2-05B6-4466-AE9F-25A782704A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Reading", "src\BituBooking.Reading\BituBooking.Reading.csproj", "{41559F05-FEA0-4AC0-A21B-3661991AB0A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.App.KafkaConsumer", "src\BituBooking.App.KafkaConsumer\BituBooking.App.KafkaConsumer.csproj", "{710CDCE2-AA68-4F7D-AD7B-9EEDD684B0E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BituBooking.Infra.Kafka", "src\BituBooking.Infra.Kafka\BituBooking.Infra.Kafka.csproj", "{049EF0E7-AECF-499D-A33E-7D75697EF788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75ED7636-E0B0-48F6-934C-1173640331BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75ED7636-E0B0-48F6-934C-1173640331BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75ED7636-E0B0-48F6-934C-1173640331BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75ED7636-E0B0-48F6-934C-1173640331BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE69DB8E-E73F-4A8D-BA7A-15FFF9243191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE69DB8E-E73F-4A8D-BA7A-15FFF9243191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE69DB8E-E73F-4A8D-BA7A-15FFF9243191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE69DB8E-E73F-4A8D-BA7A-15FFF9243191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{406E77F7-2FE2-4E1D-8137-0D0592825C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406E77F7-2FE2-4E1D-8137-0D0592825C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406E77F7-2FE2-4E1D-8137-0D0592825C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406E77F7-2FE2-4E1D-8137-0D0592825C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{261B1C29-2704-4834-8A53-6FDA67C3C265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{261B1C29-2704-4834-8A53-6FDA67C3C265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{261B1C29-2704-4834-8A53-6FDA67C3C265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{261B1C29-2704-4834-8A53-6FDA67C3C265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE87259F-2FF8-4D90-951B-AC53D7486D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE87259F-2FF8-4D90-951B-AC53D7486D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE87259F-2FF8-4D90-951B-AC53D7486D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE87259F-2FF8-4D90-951B-AC53D7486D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5B6BCC2-05B6-4466-AE9F-25A782704A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B6BCC2-05B6-4466-AE9F-25A782704A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B6BCC2-05B6-4466-AE9F-25A782704A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B6BCC2-05B6-4466-AE9F-25A782704A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41559F05-FEA0-4AC0-A21B-3661991AB0A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41559F05-FEA0-4AC0-A21B-3661991AB0A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41559F05-FEA0-4AC0-A21B-3661991AB0A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41559F05-FEA0-4AC0-A21B-3661991AB0A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{710CDCE2-AA68-4F7D-AD7B-9EEDD684B0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{710CDCE2-AA68-4F7D-AD7B-9EEDD684B0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{710CDCE2-AA68-4F7D-AD7B-9EEDD684B0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{710CDCE2-AA68-4F7D-AD7B-9EEDD684B0E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049EF0E7-AECF-499D-A33E-7D75697EF788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049EF0E7-AECF-499D-A33E-7D75697EF788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049EF0E7-AECF-499D-A33E-7D75697EF788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049EF0E7-AECF-499D-A33E-7D75697EF788}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75ED7636-E0B0-48F6-934C-1173640331BD} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{BE69DB8E-E73F-4A8D-BA7A-15FFF9243191} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{406E77F7-2FE2-4E1D-8137-0D0592825C7B} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{261B1C29-2704-4834-8A53-6FDA67C3C265} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{CE87259F-2FF8-4D90-951B-AC53D7486D28} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{A5B6BCC2-05B6-4466-AE9F-25A782704A98} = {2688FDB0-EBDB-42F4-B473-6C2DD36289C0}
+		{41559F05-FEA0-4AC0-A21B-3661991AB0A6} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{710CDCE2-AA68-4F7D-AD7B-9EEDD684B0E7} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+		{049EF0E7-AECF-499D-A33E-7D75697EF788} = {454019B2-B7A9-4D0C-A559-6899727E9FD1}
+	EndGlobalSection
+EndGlobal

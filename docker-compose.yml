@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+  kafka-cluster:
+    image: landoop/fast-data-dev:2.6.2
+    environment:
+      ADV_HOST: localhost
+      RUNTESTS : 0
+      FORWARDLOGS : 0
+      SAMPLEDATA: 0
+    ports:
+      - 2181:2181
+      - 3030:3030
+      - 8081-8083:8081-8083
+      - 9581-9585:9581-9585
+      - 9092:9092
+    networks:
+      - bitu-booking
+
+  postgres:
+    image: postgres:alpine
+    container_name: bitu-booking-postgres
+    restart: on-failure
+    ports: 
+        - "5432:5432"
+    environment: 
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_MULTIPLE_DATABASES: bitubooking
+    volumes: 
+        - ./docker/pg:/docker-entrypoint-initdb.d
+    networks: 
+        - bitu-booking
+  
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/mongo:/data/db
+    networks:
+      - bitu-booking
+
+networks: 
+  bitu-booking:
+    driver: bridge  
