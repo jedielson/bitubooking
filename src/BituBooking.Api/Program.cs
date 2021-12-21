@@ -3,6 +3,7 @@ using BituBooking.Infra.Storage.Postgres;
 using BituBooking.Reading;
 using BituBooking.Infra.Kafka;
 using KafkaFlow;
+using KafkaFlow.Admin.Dashboard;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseKafkaFlowDashboard();
 
 var kafkaBus = app.Services.CreateKafkaBus();
 

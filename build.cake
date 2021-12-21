@@ -49,8 +49,7 @@ Task("database-clean")
 var taskDatabaseUpdate = Task("database-update")
     .Does(() =>
 {
-    var command = "ef database update ";
-    command += "--no-build ";
+    var command = "ef database update ";    
     command += projectsVariables;
     command += "-v";
 
@@ -122,6 +121,16 @@ var taskIntegrationTest = Task("dotnet-test")
     .Does(() =>
 {
     DotNetTest("./tests/BituBooking.Integration/BituBooking.Integration.csproj");
+});
+
+var taskPublish = Task("dotnet-deploy")
+    .Does(() =>
+{
+    DotNetPublish("./src/BituBooking.Api",new DotNetPublishSettings
+    {
+        Configuration = "Release",
+        OutputDirectory = "./artifacts/"
+    });
 });
 
 //////////////////////////////////////////////////////////////////////

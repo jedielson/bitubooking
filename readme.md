@@ -21,7 +21,7 @@ You can access Kafka cluster in `http://localhost:3030`.
 ### Setup Kafka Topics
 
 ``` bash
-dotnet cake --migration=First --target terraform-apply
+dotnet cake --target terraform-apply
 ```
 
 ### Databases operations

@@ -436,3 +436,4 @@ terraform.rc
 # Cake Build
 
 /.config/caketools
+/running

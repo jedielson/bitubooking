@@ -9,6 +9,9 @@
   <ItemGroup>
     <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
     <PackageReference Include="KafkaFlow" Version="2.2.1" />
+    <PackageReference Include="KafkaFlow.Admin" Version="2.2.1" />
+    <PackageReference Include="KafkaFlow.Admin.Dashboard" Version="2.2.1" />
+    <PackageReference Include="KafkaFlow.Admin.WebApi" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.Extensions.Hosting" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.LogHandler.Console" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="2.2.1" />

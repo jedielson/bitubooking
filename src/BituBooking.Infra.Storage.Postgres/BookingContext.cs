@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class BookingContext : DbContext
 {
-    public BookingContext(DbContextOptions<BookingContext> options)
+    public BookingContext(DbContextOptions options)
         : base(options)
     {
 

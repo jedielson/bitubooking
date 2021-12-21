@@ -31,7 +31,9 @@ public static class ServicesExtensions
         {
             cluster
                 .WithBrokers(new[] { configuration.GetValue<string>("KafkaServer:Url") })
-                .WithSchemaRegistry(config => config.Url = "localhost:8081");
+                .EnableAdminMessages("kafka-flow.admin")
+                .EnableTelemetry("kafka-flow.admin")
+                .WithSchemaRegistry(config => config.Url = configuration.GetValue<string>("KafkaServer:Registry"));
             cluster.AddKafkaConsumers(configuration);
             cluster.AddKafkaProducers(configuration);
         }
