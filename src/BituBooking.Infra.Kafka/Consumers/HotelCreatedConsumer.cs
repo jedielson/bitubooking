@@ -25,6 +25,7 @@ public class HotelCreatedConsumer : IMessageHandler<HotelCreated>
     public async Task Handle(IMessageContext context, HotelCreated message)
     {
         _logger.LogDebug("\n\n\nConsumed message in {name}\n\n\n", nameof(HotelCreatedConsumer));
+        throw new Exception("Erro ao consumir");
 
         Hotel h = new();
         h.Code = message.Code;
@@ -49,5 +50,21 @@ public class HotelCreatedConsumer : IMessageHandler<HotelCreated>
         };
 
         await _service.Save(h, context.ConsumerContext.WorkerStopped);
+    }
+}
+
+
+public class HotelCreatedRetryConsumer : IMessageHandler<HotelCreated>
+{
+    private readonly ILogger<HotelCreatedRetryConsumer> _logger;
+
+    public HotelCreatedRetryConsumer(ILogger<HotelCreatedRetryConsumer> logger)
+    {
+        _logger = logger;
+    }
+    public Task Handle(IMessageContext context, HotelCreated message)
+    {
+        //_logger.LogInformation("\n\n\nRetryed message in {@message}\n\n\n", message);
+        return Task.CompletedTask;
     }
 }

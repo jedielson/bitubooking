@@ -16,6 +16,7 @@
     <PackageReference Include="KafkaFlow.LogHandler.Console" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.Retry" Version="1.0.1" />
+    <PackageReference Include="KafkaFlow.Retry.MongoDb" Version="1.0.1" />
     <PackageReference Include="KafkaFlow.Serializer" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.Serializer.NewtonsoftJson" Version="2.2.1" />
     <PackageReference Include="KafkaFlow.SchemaRegistry" Version="2.2.1" />

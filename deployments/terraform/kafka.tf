@@ -6,11 +6,21 @@ provider "kafka" {
 resource "kafka_topic" "hotel-created" {
   name               = "hotel-created"
   replication_factor = 1
-  partitions         = 1
+  partitions         = 1  
 
   config = {
     "segment.ms"     = "20000"
     "cleanup.policy" = "compact"
+  }
+}
+
+resource "kafka_topic" "hotel-created-retry" {
+  name               = "test-topic-retry-hotel-created"
+  replication_factor = 1
+  partitions         = 1  
+
+  config = {
+    "segment.ms"     = "20000"    
   }
 }
 
