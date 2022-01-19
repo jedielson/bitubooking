@@ -8,25 +8,26 @@
 
   <ItemGroup>
     <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
-    <PackageReference Include="KafkaFlow" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Admin" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Admin.Dashboard" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Admin.WebApi" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Extensions.Hosting" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.LogHandler.Console" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Retry" Version="1.0.1" />
-    <PackageReference Include="KafkaFlow.Retry.MongoDb" Version="1.0.1" />
-    <PackageReference Include="KafkaFlow.Serializer" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Serializer.NewtonsoftJson" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.SchemaRegistry" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.Serializer.SchemaRegistry.ConfluentAvro" Version="2.2.1" />
-    <PackageReference Include="KafkaFlow.TypedHandler" Version="2.2.1" />
-    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="KafkaFlow" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Admin" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Admin.Dashboard" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Admin.WebApi" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Extensions.Hosting" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.LogHandler.Console" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Retry" Version="1.0.2" />
+    <PackageReference Include="KafkaFlow.Retry.MongoDb" Version="1.0.2" />
+    <PackageReference Include="KafkaFlow.Serializer" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Serializer.NewtonsoftJson" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.SchemaRegistry" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Serializer.SchemaRegistry.ConfluentAvro" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.Serializer.SchemaRegistry.ConfluentJson" Version="2.2.2" />
+    <PackageReference Include="KafkaFlow.TypedHandler" Version="2.2.2" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
-    <PackageReference Include="Polly" Version="7.2.2" />
+    <PackageReference Include="Polly" Version="7.2.3" />
   </ItemGroup>
 
   <ItemGroup>
